@@ -23,6 +23,7 @@ const Login = () => {
     const onSignUpEmail = async () => {
         try {
             await signup(email, password)
+            handleAlertSuccess('sign up successful')
         } catch (err) {
             handleAlertError(err)
         }
